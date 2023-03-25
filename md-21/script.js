@@ -262,23 +262,3 @@ function reverseString(text){
 
 
 
-// ////slice, splice:
-// const num = [0, 1, 2, 3, 4, 5, 6, 54, 75, 3, 53];
-// // console.log(num.slice(2, 5)); // 2 er age cut bosabe r 5 er age cut bosabe index 0 theke count//orginal array k chng kore na
-// // console.log(num)
-// console.log(num.splice(2, 5, 100, 200))///will chng the orginal array// element add o kora jay
-// // console.log(num)
-
-const names = ['abul', 'gbul', 'babul', 'babul','makbul', 'gbul', 'abul','abul', 'makbul'];
-function removeDuplicate(names){
-  let finalNames =[];
-  for(let i = 0; i < names.length; i++){
-     const name = names[i];
-     if(finalNames.includes(name) === false){
-      finalNames.push(name)
-     }
-  }
-  return finalNames;
-}
-let finalNames= removeDuplicate(names);
-console.log(finalNames)

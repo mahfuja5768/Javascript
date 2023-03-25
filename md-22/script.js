@@ -104,7 +104,7 @@ function priceOfPhones(phones){
         const phone = phones[i];
         const priceTotal = phone.price * phone.quantity;
         sum += priceTotal;
-        console.log(phone)
+        console.log(phone);
     }
     return sum;
 }
