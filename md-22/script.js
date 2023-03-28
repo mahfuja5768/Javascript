@@ -98,15 +98,46 @@ let phones = [
     {name: 'walton', price: 22000  , quantity: 2},
     {name: 'xoami', price: 52000   , quantity: 5},
 ];
-function priceOfPhones(phones){
-    let sum = 0;
-    for(let i = 0; i < phones.length; i++){
-        const phone = phones[i];
-        const priceTotal = phone.price * phone.quantity;
-        sum += priceTotal;
-        console.log(phone);
+// function priceOfPhones(phones){
+//     let sum = 0;
+//     for(let i = 0; i < phones.length; i++){
+//         const phone = phones[i];
+//         const priceTotal = phone.price * phone.quantity;
+//         sum += priceTotal;
+//         console.log(phone);
+//     }
+//     return sum;
+// }
+// // let sum = priceOfPhones(phones);
+// // console.log('the total price is:', sum)
+
+
+// function ticketPrice(ticketQuantity){
+//     const first100Rate = 100;
+//     const second100Rate = 90;
+//     const restTicketRate = 70;
+//     if(ticketQuantity <= 100){
+//         const price = ticketQuantity * first100Rate;
+//         return price;
+//     }
+//     else if(ticketQuantity <=200){
+//         const first100Price = 100 * first100Rate;
+//         const restTicketQuantity = ticketQuantity - 100;
+//         const restTicketPrice = restTicketQuantity * second100Rate;
+//         const totalPrice = first100Price + restTicketPrice;
+//         return totalPrice;
+//     }
+
+// // }
+// const totalPrice = ticketPrice(120);
+// console.log(totalPrice);
+
+
+function add(num1, num2){
+    if(num1.typeOf !== 'number' || num2.typeOf !== 'number'){
+        return 'Please enter only number!'
     }
-    return sum;
+    return num1 + num2
 }
-let sum = priceOfPhones(phones);
-console.log('the total price is:', sum)
+// const result = add(12, '45')
+// console.log(result);
