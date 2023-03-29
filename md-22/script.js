@@ -134,10 +134,33 @@ let phones = [
 
 
 function add(num1, num2){
-    if(num1.typeOf !== 'number' || num2.typeOf !== 'number'){
+    if(typeof num1 !== 'number' || typeof num2 !== 'number'){
         return 'Please enter only number!'
     }
     return num1 + num2
 }
-// const result = add(12, '45')
-// console.log(result);
+const result = add("12", 45)
+console.log(result);
+
+/////pblmmmmmmmmmm///robiiiiiiii
+// 3. calculate the total oil price that i have to pay::::
+function oilPrice(amountOfDiesel, amountOfPetrol, amountOfOctane,){
+    if(typeof amountOfOils !== 'number'){
+       console.log('Please enter only numbers!') 
+    }
+    else{
+        for(let i = 0; i < oilPrice.length; i++){
+            const perLiterDiesel = 114;
+            const perLiterPetrol = 130;
+            const perLiterOctane = 135;
+            const yourDieselCost = amountOfDiesel * perLiterDiesel;
+            const yourPetrolCost = amountOfPetrol * perLiterPetrol;
+            const yourOctaneCost = amountOfOctane * perLiterOctane;
+            const totalOilPrice = yourDieselCost + yourPetrolCost + yourOctaneCost;
+            return totalOilPrice;
+            }
+    }
+}
+let amountOfOils = [2, 1, 2];
+let totalOilPrice = oilPrice(amountOfOils);
+console.log(totalOilPrice);
